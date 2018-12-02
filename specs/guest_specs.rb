@@ -1,6 +1,9 @@
 require('minitest/autorun')
 require('minitest/rg')
 require_relative('../guest')
+require_relative('../room')
+require_relative('../song')
+require_relative('../karaoke_bar')
 
 class GuestTest < MiniTest::Test
 
@@ -17,7 +20,9 @@ class GuestTest < MiniTest::Test
   end
 
 
-  
+  def guest_has_wallet()
+    assert_equal(0, @guest.wallet)
+  end
 
 
 end
