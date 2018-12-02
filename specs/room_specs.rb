@@ -7,7 +7,10 @@ require_relative('../karaoke_bar')
 
 class RoomTest < MiniTest::Test
 
+def setup()
+  @occupants =["Mary", "Tom", "Harry"]
 
+end
 
 
   def room_has_what_name()
@@ -19,6 +22,18 @@ class RoomTest < MiniTest::Test
     assert_equal(10, @room.entrance_fee)
 
   end
+
+  def get_room_occupants()
+    assert_equal(@occupants, @room.occupants)
+  end
+
+
+  # def add_guests_to_room()
+
+
+
+
+
 
 
 

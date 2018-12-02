@@ -24,5 +24,9 @@ class GuestTest < MiniTest::Test
     assert_equal(0, @guest.wallet)
   end
 
+  def pay_entrance_fee()
+    assert_equal(10, @guest.entrance_fee(@room))
+  end
 
+  
 end
