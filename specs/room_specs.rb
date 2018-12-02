@@ -15,6 +15,11 @@ class RoomTest < MiniTest::Test
   end
 
 
+  def get_room_fee()
+    assert_equal(10, @room.entrance_fee)
+
+  end
+
 
 
 end
