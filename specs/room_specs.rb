@@ -20,21 +20,14 @@ end
 
   def get_room_fee()
     assert_equal(10, @room.entrance_fee)
-
   end
 
-  def get_room_occupants()
-    assert_equal(@occupants, @room.occupants)
-  end
 
+  def is_room_full_true()
+    assert_equal(true, result)
+  end
 
   # def add_guests_to_room()
-
-
-
-
-
-
 
 
 end
