@@ -27,14 +27,19 @@ end
     assert_equal(true, result)
   end
 
-  def add_guests_to_room()
-    assert_equal
-  end
+  # def add_guests_to_room()
+  #   assert_equal
+  # end
 
   def remove_guest_from_room()
     @room.remove_guest_from_room
     assert_equal(2, @room.count_occupants)
   end
 
+  def add_song_to_playlist()
+    @room.add_song_to_playlist(@playlist)
+    assert_equal(1, @room.count_playlist)
+  end
 
+  
 end

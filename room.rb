@@ -34,4 +34,9 @@ class Room
     @occupants.pop()
   end
 
+  def add_song_to_playlist(new_song)
+    @playlist << new_song
+  end 
+
+
   end
