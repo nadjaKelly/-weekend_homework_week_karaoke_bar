@@ -21,11 +21,17 @@ class Room
     @ccupants.count <= @max_number_of_guests
   end
 
+
   def add_guest_to_room(additional_guest)
     if (occupants.count < @max_number_of_guests) && (additional_guest.wallet > @entrance_fee)
       @ccupants << additional_guest
       @till - @entrance_fee
     end
+  end
+
+
+  def remove_guest_from_room()
+    @occupants.pop()
   end
 
   end
